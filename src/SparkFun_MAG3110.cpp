@@ -99,9 +99,9 @@ void MAG3110::readMag(int* x, int* y, int* z){
 	}
 
 	// Put data into referenced variables
-	*x = (int) values[0];
-	*y = (int) values[1];
-	*z = (int) values[2];
+	*x = (int16_t) values[0];
+	*y = (int16_t) values[1];
+	*z = (int16_t) values[2];
 
 }
 
